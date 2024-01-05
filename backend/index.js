@@ -4,6 +4,8 @@ const app = express()
 const connectToMongo = require('./db') ;
 connectToMongo() ;
 
+const cors = require('cors')
+app.use(cors())  //Cross-Origin Resource Sharing
 const dotenv = require('dotenv') ;
 dotenv.config()
 
