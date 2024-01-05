@@ -19,6 +19,7 @@ app.get('/' , (req,res)=>{
 app.use('/api/auth' , require('./routes/auth')) ;
 app.use('/api/notes' , require('./routes/notes')) ;
 
+
 app.listen(PORT , (error)=>{
     if(error) console.log("error: " ,error)
     console.log("Running Server Successfully At PORT :",PORT)
